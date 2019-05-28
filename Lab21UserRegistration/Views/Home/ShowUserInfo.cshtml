@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "ShowUserInfo";
+}
+
+@*You can access a model in Razor 3 ways*@
+
+@*way number 1: using the Html Helper "Display For"*@
+
+@*@model User
+    <h2>ShowUserInfo</h2>
+
+    <p>@Html.DisplayFor(model => model.UserName)</p>*@
+
+@*Way number 2: calling  in a model of the NameSpace.Model and using the Model to access the parts of the mdel directly.*@
+
+@*
+    @model TestModelsMVC.Models.User
+
+    <p>@Model.UserName</p>
+    <p>@(Model.FavoriteNumber - 1)</p>
+*@
+
+@*Way number 3: storing the model in a ViewBag.*@
+
+<p>@(ViewBag.User.UserName.ToUpper())</p>
+<p>@(ViewBag.User.FavoriteNumber - 1)</p>
