@@ -10,7 +10,7 @@ namespace Lab21UserRegistration.Controllers
     {
         public ActionResult Index()
         {
-            return View();
+            return View(); 
         }
 
         public ActionResult Welcome(string username, string email, string password, string confirmPassword, 
@@ -30,6 +30,5 @@ namespace Lab21UserRegistration.Controllers
         {
             return View();
         }
-       
     }
 }

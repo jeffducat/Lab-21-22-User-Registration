@@ -78,3 +78,7 @@ C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\obj\Debu
 C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\obj\Debug\Lab21UserRegistration.csproj.CopyComplete
 C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\obj\Debug\Lab21UserRegistration.dll
 C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\obj\Debug\Lab21UserRegistration.pdb
+C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\bin\EntityFramework.dll
+C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\bin\EntityFramework.SqlServer.dll
+C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\bin\EntityFramework.xml
+C:\Users\jduca\source\repos\Lab21UserRegistration\Lab21UserRegistration\bin\EntityFramework.SqlServer.xml

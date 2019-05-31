@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Items</h2>
+
+@foreach (var item in ViewBag.Items)
+{
+    <div class="col-md-3" id="ProductBox">
+        <h3>Name: @item.Name</h3>
+        <p>Description: @item.Description</p>
+        <p>Quantity: @item.Quantity</p>
+        <p>Price: @item.Price</p>
+        <a href="../CoffeeShop/UpdateItem?Id=@item.Id" class="btn-primary">Update</a>
+        <a href="../CoffeeShop/DeleteProduct?Id=@item.Id" class="btn-danger">Delete</a>
+    </div>
+}
+    <a href="..\ShopDB\ProductForm">Add a new Product!</a>
