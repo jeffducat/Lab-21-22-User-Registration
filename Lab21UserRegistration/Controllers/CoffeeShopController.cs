@@ -31,7 +31,7 @@ namespace Lab21UserRegistration.Controllers
                 return RedirectToAction("Index",newItem);
             }
             ViewBag.ErrorMessage = "Something did not go right";
-            return View("ProductForm");
+            return View("Index");
         }
        
         public ActionResult DeleteProduct(int Id)
@@ -52,23 +52,23 @@ namespace Lab21UserRegistration.Controllers
             return View(found);
         }
 
-        public ActionResult SaveChanges(Item updatedProduct)
+        public ActionResult SaveChanges(Item updatedItem)
         {
-            Item originalProduct = ORM.Items.Find(updatedProduct.Id);
+            Item originalItem = ORM.Items.Find(updatedItem.Id);
 
-            if (originalProduct != null)
+            if (originalItem != null)
             {
-                originalProduct.Name = updatedProduct.Name;
-                originalProduct.Description = updatedProduct.Description;
-                originalProduct.Quantity = updatedProduct.Quantity;
-                originalProduct.Price = updatedProduct.Price;
+                originalItem.Name = updatedItem.Name;
+                originalItem.Description = updatedItem.Description;
+                originalItem.Quantity = updatedItem.Quantity;
+                originalItem.Price = updatedItem.Price;
 
                 ORM.SaveChanges();
                 return RedirectToAction("Index");
             }
             else
             {
-                return RedirectToAction("UpdateProduct", updatedProduct.Id);
+                return RedirectToAction("Index", updatedItem.Id);
             }
         }
     }
